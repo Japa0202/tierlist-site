@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List de Pessoas Doidas do Servidor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .tier-card {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .name-highlight {
+            position: relative;
+            display: inline-block;
+        }
+        .name-highlight::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 3px;
+            border-radius: 2px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .tier-card:hover .name-highlight::after {
+            transform: scaleX(1);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes animate-text {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-text {
+          background-size: 300% 300%;
+          animation: animate-text 3s ease infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen relative" style="
+    background: url('https://s6.ezgif.com/tmp/ezgif-618ef2a53cc79f.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+">
+    <div class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm -z-10"></div>
+    <div class="container mx-auto px-4 py-8 relative">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="inline-block mb-4 float-animation">
+                <img src="https://i.pinimg.com/736x/3a/6d/85/3a6d858b51bc6b4cabd89b948e3d42a7.jpg" alt="Tier List Icon" class="w-48 h-32 rounded-lg object-cover border-4 border-yellow-400 shadow-lg">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 animate-text">
+              Tier List de Pessoas Doidas do Servidor
+            </h1>
+            <p class="text-xl mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 font-medium">
+              Classificação ™ dos seres mais exóticos que existem
+            </p>
+            <p class="text-sm italic text-gray-400 mt-1 animate-pulse">
+              *Resultados não comprovados cientificamente - análise 100% duvidosa
+            </p>
+        </header>
+
+        <!-- Tier List Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Tier 1 - Exótico -->
+            <div class="tier-card bg-gradient-to-br from-red-500 to-red-600 rounded-xl p-5 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-white mr-2"><i class="fas fa-radiation"></i></span>
+                    <h2 class="text-2xl font-bold text-white">Exótico</h2>
+                </div>
+                <p class="text-white mb-4 font-medium">Seres perigosos ou absurdamente esquisitos</p>
+                
+                <div class="space-y-4">
+                    <!-- Item 1 -->
+                    <div class="bg-red-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">1</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Isael</h3>
+                        </div>
+                        <p class="text-white text-sm">Doido, um dos mais perigosos do server. Gosta de encrenca e irrita qualquer um, mas é legal quando quer.</p>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="bg-red-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">2</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Leon</h3>
+                        </div>
+                        <p class="text-white text-sm">Talvez o mais exótico por usar palavras sensíveis para homens. Um dos mais gays já vistos. Aparentemente adora molestar colegas próximos.</p>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="bg-red-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-red-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">3</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Renã</h3>
+                        </div>
+                        <p class="text-white text-sm">Um dos maiores adoradores de humor negro. Extremamente exótico e perigoso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 2 - Sequelado -->
+            <div class="tier-card bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl p-5 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-white mr-2"><i class="fas fa-brain"></i></span>
+                    <h2 class="text-2xl font-bold text-white">Sequelado</h2>
+                </div>
+                <p class="text-white mb-4 font-medium">Seres altamente esquisitos e exóticos</p>
+                
+                <div class="space-y-4">
+                    <!-- Items 4-10 -->
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">4</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Isabela</h3>
+                        </div>
+                        <p class="text-white text-sm">Desenhista, com gosto por skins sensuais nos animes. Sua inocência contrasta com seu lado mais atrevido. Uma mistura fofa de meiguice e loucura.</p>
+                    </div>
+                    
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">5</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Xão</h3>
+                        </div>
+                        <p class="text-white text-sm">Não pensa direito e só vive a vida. Humor duvidoso e homofóbico.</p>
+                    </div>
+                    
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">6</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Gabs</h3>
+                        </div>
+                        <p class="text-white text-sm">Ruim no Fortnite, adora PVP em jogos exóticos como Deepwoken. É tóxico na zoeira, mas muito gente fina (eu acho).</p>
+                    </div>
+                    
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">7</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Izuku</h3>
+                        </div>
+                        <p class="text-white text-sm">Uma criatura esquisita que joga no mobile... (Um Bidoof).</p>
+                    </div>
+                    
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">8</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Kenzo</h3>
+                        </div>
+                        <p class="text-white text-sm">Conhecido como "Coitadolândia", é muito gente fina, mas emocionalmente instável. Um ser de instabilidade, pode ser muito exótico às vezes.</p>
+                    </div>
+                    
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">9</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Sad</h3>
+                        </div>
+                        <p class="text-white text-sm">Esquisito e gente fina.</p>
+                    </div>
+                    
+                    <div class="bg-purple-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-purple-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">10</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Snocer</h3>
+                        </div>
+                        <p class="text-white text-sm">Outro ser instável. Aparentemente normal, mas consegue ser altamente exótico em picos de instabilidade. Tem belos gritos e falas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 3 - Diferenciado -->
+            <div class="tier-card bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl p-5 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-white mr-2"><i class="fas fa-star-half-alt"></i></span>
+                    <h2 class="text-2xl font-bold text-white">Diferenciado</h2>
+                </div>
+                <p class="text-white mb-4 font-medium">Quase sequelados, ou quase decentes, mas ainda exóticos</p>
+                
+                <div class="space-y-4">
+                    <!-- Items 11-18 -->
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">11</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Japa</h3>
+                        </div>
+                        <p class="text-white text-sm">Um ser esquisito que não abre o olho há anos. Consegue ser exótico em várias brincadeiras, quase sendo sequelado também.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">12</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Yasmin (Nina)</h3>
+                        </div>
+                        <p class="text-white text-sm">Maluca, muuuhh, esgraçadinha. Vive trocando de amigos e romances. Uma moça bem stalker e fofoqueira.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">13</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Niik</h3>
+                        </div>
+                        <p class="text-white text-sm">SER DE ALTO PERIGO, CUIDADO. Consegue ser muito gente fina, mas pode ser xingado por qualquer um à vontade.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">14</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Letícia</h3>
+                        </div>
+                        <p class="text-white text-sm">Quase uma criança. Doida e briguenta, consegue ser fofa e gente fina também.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">15</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Vini</h3>
+                        </div>
+                        <p class="text-white text-sm">O agroboy. Um zoeiro e adorador de piadas ruins.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">16</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Potin</h3>
+                        </div>
+                        <p class="text-white text-sm">Exótico. Não sabe mirar skills em jogos e adora rir das encrencas dos amigos.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">17</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Nescau</h3>
+                        </div>
+                        <p class="text-white text-sm">Adora ver outros se ferrando. Quase um ser normal, até apoiar atitudes jotapescas.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-yellow-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">18</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Brad (Diego)</h3>
+                        </div>
+                        <p class="text-white text-sm">Humor duvidoso, adora ver amigos se ferrando. Porém, consegue ser extremamente gente boa, rico e competitivo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 4 - Decente -->
+            <div class="tier-card bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-5 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-white mr-2"><i class="fas fa-user"></i></span>
+                    <h2 class="text-2xl font-bold text-white">Decente</h2>
+                </div>
+                <p class="text-white mb-4 font-medium">Seres quase normais, mas com alguma coisa diferenciada</p>
+                
+                <div class="space-y-4">
+                    <!-- Items 19-23 -->
+                    <div class="bg-green-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">19</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Júlia</h3>
+                        </div>
+                        <p class="text-white text-sm">Uma menina incrível, com um humor duvidoso e mau gosto pra algumas comidas.</p>
+                    </div>
+                    
+                    <div class="bg-green-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">20</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Pedro</h3>
+                        </div>
+                        <p class="text-white text-sm">Às vezes consegue ser muito esquisito. Humor duvidoso, porém muito gente fina. Um ser extremamente vingativo.</p>
+                    </div>
+                    
+                    <div class="bg-green-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">21</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Aria</h3>
+                        </div>
+                        <p class="text-white text-sm">Uma psicóloga romântica, muito gente fina.</p>
+                    </div>
+                    
+                    <div class="bg-green-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">22</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Alone</h3>
+                        </div>
+                        <p class="text-white text-sm">Um ser quase normal, mas com um humor extremamente datado e ruim. Por isso, não consegue ser totalmente normal.</p>
+                    </div>
+                    
+                    <div class="bg-green-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-green-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">23</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Lary</h3>
+                        </div>
+                        <p class="text-white text-sm">Meio esquisitinha e exótica. Consegue ser gente fina e meiga. Bem emotiva e gótica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 5 - Humano -->
+            <div class="tier-card bg-gradient-to-br from-blue-400 to-blue-500 rounded-xl p-5 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-white mr-2"><i class="fas fa-user-friends"></i></span>
+                    <h2 class="text-2xl font-bold text-white">Humano</h2>
+                </div>
+                <p class="text-white mb-4 font-medium">Pessoas normais no ponto de vista dos loucos</p>
+                
+                <div class="space-y-4">
+                    <!-- Items 24-27 -->
+                    <div class="bg-blue-300 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">24</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Fast</h3>
+                        </div>
+                        <p class="text-white text-sm">Normal, bom humor, gente fina. É o Fast.</p>
+                    </div>
+                    
+                    <div class="bg-blue-300 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">25</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Adison (Nutella)</h3>
+                        </div>
+                        <p class="text-white text-sm">Consegue ser doido, tem humor negro e é gente fina. Uma pessoa social.</p>
+                    </div>
+                    
+                    <div class="bg-blue-300 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">26</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Lorena</h3>
+                        </div>
+                        <p class="text-white text-sm">Normal. Não está mais entre nós, mas tinha bom gosto pra jogos e era gente fina.</p>
+                    </div>
+                    
+                    <div class="bg-blue-300 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">27</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Tiuh</h3>
+                        </div>
+                        <p class="text-white text-sm">Muito gente fina. Histórias muito doidas e o conselheiro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 6 - Halk -->
+            <div class="tier-card bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl p-5 shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-white mr-2"><i class="fas fa-crown"></i></span>
+                    <h2 class="text-2xl font-bold text-white">Halk</h2>
+                </div>
+                <p class="text-white mb-4 font-medium">É o Tio Halk</p>
+                
+                <div class="space-y-4">
+                    <!-- Item 28 -->
+                    <div class="bg-indigo-400 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-white font-bold bg-indigo-600 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">28</span>
+                            <h3 class="text-lg font-semibold text-white name-highlight">Tio Halk</h3>
+                        </div>
+                        <p class="text-white text-sm">É o Halk. Tem um gosto pra jogos MUITO EXÓTICOS, e também é um cara MUITO gente fina e competitivo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 7 - Especial -->
+            <div class="tier-card bg-gradient-to-br from-yellow-300 to-yellow-400 rounded-xl p-5 shadow-lg col-span-full lg:col-span-1">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl font-bold text-gray-800 mr-2"><i class="fas fa-star"></i></span>
+                    <h2 class="text-2xl font-bold text-gray-800">Especial</h2>
+                </div>
+                <p class="text-gray-800 mb-4 font-medium">Cargo ocupado por um ser totalmente diferenciado, sem explicação</p>
+                
+                <div class="space-y-4">
+                    <!-- Item 29 -->
+                    <div class="bg-yellow-200 bg-opacity-40 rounded-lg p-3 backdrop-blur-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="text-gray-800 font-bold bg-yellow-400 rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">29</span>
+                            <h3 class="text-lg font-semibold text-gray-800 name-highlight">JP (João Paulo)</h3>
+                        </div>
+                        <p class="text-gray-800 text-sm">Quase um mascote do grupo. Extremamente exótico, humilde e MUITO esquisito. Humor super duvidoso. Um ser com total falta de inteligência e gameplay extremamente duvidosa. Um dos seres mais xingáveis que existe, mas que todo mundo gosta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center">
+            <p class="text-xl mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 font-medium">
+              Esta tier list foi criada com base em observações científicas* rigorosas
+            </p>
+            <p class="text-sm italic text-gray-400 mt-1 animate-pulse">
+              *termos e condições: não é ciência de verdade, apenas zoeira - metodologia 0% confiável
+            </p>
+            <div class="mt-4">
+                <i class="fas fa-grin-squint-tears text-yellow-500 text-2xl"></i>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Add animation to name highlights based on card color
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.tier-card');
+            
+            cards.forEach(card => {
+                // Determine the accent color based on the card's gradient
+                let accentColor = '';
+                if (card.classList.contains('from-red-500')) accentColor = 'bg-red-300';
+                if (card.classList.contains('from-purple-600')) accentColor = 'bg-purple-300';
+                if (card.classList.contains('from-yellow-500')) accentColor = 'bg-yellow-300';
+                if (card.classList.contains('from-green-500')) accentColor = 'bg-green-300';
+                if (card.classList.contains('from-blue-400')) accentColor = 'bg-blue-200';
+                if (card.classList.contains('from-indigo-500')) accentColor = 'bg-indigo-300';
+                if (card.classList.contains('from-yellow-300')) accentColor = 'bg-yellow-200';
+                
+                // Apply the color to all name highlights in this card
+                const highlights = card.querySelectorAll('.name-highlight::after');
+                highlights.forEach(highlight => {
+                    highlight.classList.add(accentColor);
+                });
+                
+                // Workaround for Safari since it doesn't support modifying pseudo-elements
+                const nameHighlights = card.querySelectorAll('.name-highlight');
+                nameHighlights.forEach(el => {
+                    el.style.setProperty('--highlight-color', accentColor);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
